@@ -2,7 +2,9 @@ cff-version: 1.2.0
 message: "If you use this code, its outputs or its analysis plan, please cite it as below."
 title: "Household animals, child diarrhoea, antibiotic use and growth in India"
 type: software
-version: "0.0.0"
+version: "0.1.0"
+doi: "10.5281/zenodo.24596395"
+date-released: "2026-11-27"
 authors:
   - family-names: "Siddalingaiah"
     given-names: "H S"
