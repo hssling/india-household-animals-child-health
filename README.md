@@ -4,7 +4,7 @@ Code and derived outputs for a study by Siddalingaiah H S.
 
 **Status:** v1.0.0, code and aggregate results accompanying the manuscript submitted to the Online Journal of Health and Allied Sciences. The analysis plan (`docs/ANALYSIS_PLAN.md`) was frozen on 27 November 2026 before any outcome was analysed and released as v0.1.0; changes and additions are logged in `docs/DEVIATIONS.md`.
 
-**Archived:** analysis plan v0.1.0, doi:[10.5281/zenodo.24596396](https://doi.org/10.5281/zenodo.24596396) (concept DOI, always the latest version: [10.5281/zenodo.24596395](https://doi.org/10.5281/zenodo.24596395)).
+**Archived:** code and results v1.0.0, doi:[10.5281/zenodo.24600162](https://doi.org/10.5281/zenodo.24600162); analysis plan v0.1.0, doi:[10.5281/zenodo.24596396](https://doi.org/10.5281/zenodo.24596396) (concept DOI, always the latest version: [10.5281/zenodo.24596395](https://doi.org/10.5281/zenodo.24596395)).
 
 ## Data
 
