@@ -38,11 +38,12 @@ KR_COLS = ["v001", "v002", "v003", "bidx", "midx", "b5", "b4", "b9", "b19", "b3"
            "v005", "v021", "v022", "v023", "v024", "v025", "sdist", "sdistri", "v006", "v007", "v012", "v106", "v130",
            "s116", "v137", "v113", "v116", "v161", "v465", "v190",
            "h11", "h11b", "h15", "h15b", "ml13n", "h22", "h31", "hw70", "hw72", "hw56",
+           "v438", "v445", "v704", "v705", "v717", "v151",
            "v411", "v414a", "v414g", "v414m", "v414n", "v414t", "v414p", "v414v"]
 # Household goods and housing materials for the rebuilt asset index (no animals, land, water, toilet or fuel).
 ASSETS = ["hv206", "hv207", "hv208", "hv209", "hv210", "hv211", "hv212", "hv221", "hv243a", "hv243b",
           "hv243e", "hv213", "hv214", "hv215"]
-HR_BASE = ["hv001", "hv002", "hv246", "hv244", "hv025"]
+HR_BASE = ["hv001", "hv002", "hv246", "hv244", "hv245", "hv025"]
 
 
 def frq_count(zippath, frq, item, code):
@@ -164,6 +165,18 @@ def main():
     d.loc[d["diarrhoea"].isna(), "antibiotic"] = float("nan")
     d["bloody"] = yes(df["h11b"])
     d["abx_diarrhoea"] = abx_d.astype(float).where(d["diarrhoea"] == 1)
+    # Plan section 5 secondary outcomes: antibiotic among children with non-bloody diarrhoea, and among
+    # children with fever or cough.
+    d["abx_nonbloody_diarrhoea"] = abx_d.astype(float).where((d["diarrhoea"] == 1) & (df["h11b"] == 0))
+    fc = (df["h22"] == 1) | (df["h31"].isin([1, 2]))
+    d["fever_cough"] = fc.astype(float).where(df["h22"].isin([0, 1]) | df["h31"].isin([0, 1, 2]))
+    d["abx_fever_cough"] = abx_f.astype(float).where(fc)
+    # Additional covariates (post-hoc review analyses; see docs/DEVIATIONS.md)
+    d["mheight_cm"] = (df["v438"] / 10).where((df["v438"] >= 1000) & (df["v438"] <= 2200))
+    d["mbmi"] = (df["v445"] / 100).where((df["v445"] >= 1200) & (df["v445"] <= 6000))
+    for c in ("v704", "v705", "v717", "v151", "hv245"):
+        if c in df:
+            d[c] = df[c]
     hw70 = df["hw70"].where(df["hw70"] < 9996)
     d["haz"] = hw70 / 100
     d["stunted"] = (hw70 < -200).astype(float).where(hw70.notna())

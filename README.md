@@ -1,6 +1,6 @@
 # Household animals, child diarrhoea, antibiotic use and growth in India
 
-Code and derived outputs for a study by Siddalingaiah H S and Preethi Ashok Masali.
+Code and derived outputs for a study by Siddalingaiah H S.
 
 **Status:** analysis plan frozen on 27 November 2026 (`docs/ANALYSIS_PLAN.md`), before any outcome was analysed. Its
 first release carries a Zenodo DOI and serves as the pre-registration. Code and outputs follow in later releases.

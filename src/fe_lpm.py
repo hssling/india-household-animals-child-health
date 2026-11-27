@@ -31,6 +31,7 @@ class FEFit:
     n: int
     n_groups: int
     n_clusters: int
+    r2_within: float = float("nan")
 
     def frame(self) -> pd.DataFrame:
         return pd.DataFrame({"coef": self.params, "se": self.se, "lo": self.lo, "hi": self.hi, "p": self.p})
@@ -76,4 +77,7 @@ def fit_fe_lpm(y: np.ndarray, X: pd.DataFrame, groups: np.ndarray, clusters: np.
     se = pd.Series(np.sqrt(np.diag(V)), index=names)
     tcrit = stats.t.ppf(0.975, G - 1)
     p = pd.Series(2 * stats.t.sf(np.abs(params / se), G - 1), index=names)
-    return FEFit(params, se, p, params - tcrit * se, params + tcrit * se, n, n_groups, G)
+    # Weighted within-group R squared (share of within-group outcome variation explained), used for
+    # coefficient-stability (Oster) bounds.
+    r2w = 1 - np.sum(w * resid ** 2) / np.sum(w * yd ** 2)
+    return FEFit(params, se, p, params - tcrit * se, params + tcrit * se, n, n_groups, G, float(r2w))
