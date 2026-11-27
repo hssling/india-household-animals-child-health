@@ -30,6 +30,7 @@ Requires Python 3 with pandas, numpy, scipy, statsmodels, pyreadstat and pyarrow
 | 2 | `src/02_analysis.py --round 5` and `--round 4` | Pre-specified primary, secondary, effect-modification and sensitivity results |
 | 3 | `src/03_descriptives.py` | Sample flow, Table 1, species profile, State-level data for Figure 2 |
 | 4 | `src/04_review_analyses.py` | Omitted pre-specified analyses and the labelled post-hoc robustness analyses |
+| 5 | `src/05_meta_sensitivity.py` | State pooling with REML and the Hartung-Knapp-Sidik-Jonkman interval (post-hoc) |
 | - | `tests/test_fe_lpm.py` | Verifies the fixed-effects estimator against statsmodels |
 
 Result files in `outputs/` are prefixed `nfhs5_`, `nfhs4_` (plan analyses) and `review_` (analyses added after the primary results; see `docs/DEVIATIONS.md`).
