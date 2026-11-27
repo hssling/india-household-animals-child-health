@@ -1,0 +1,9 @@
+kind,analysis,outcome,exposure,model,pp,lo,hi,p,n,clusters,prevalence
+post-hoc: occupation recorded (state-module subsample),occupation_subsample_base,stunted,cattle,cattle+goat_sheep+poultry+pig,-2.399316395657255,-4.842244940519465,0.04361214920495446,0.05423158994289018,28303,7932,35.816754225990685
+post-hoc: occupation recorded (state-module subsample),occupation_subsample_base,stunted,goat_sheep,cattle+goat_sheep+poultry+pig,-0.026134831601591482,-2.621747664486044,2.5694780012828606,0.9842531990229749,28303,7932,35.816754225990685
+post-hoc: occupation recorded (state-module subsample),occupation_subsample_base,stunted,poultry,cattle+goat_sheep+poultry+pig,1.0782803260334646,-2.414827879870945,4.571388531937873,0.5451235131596522,28303,7932,35.816754225990685
+post-hoc: occupation recorded (state-module subsample),occupation_subsample_base,stunted,pig,cattle+goat_sheep+poultry+pig,3.287828914585474,-5.426062878476286,12.001720707647234,0.4595496243314199,28303,7932,35.816754225990685
+post-hoc: occupation recorded (state-module subsample),occupation_subsample_adjusted,stunted,cattle,cattle+goat_sheep+poultry+pig,-2.488415970380208,-4.937947458502885,-0.038884482257531966,0.04647327626778155,28303,7932,35.816754225990685
+post-hoc: occupation recorded (state-module subsample),occupation_subsample_adjusted,stunted,goat_sheep,cattle+goat_sheep+poultry+pig,-0.09160550731313871,-2.682004179598309,2.498793164972031,0.9447352823731374,28303,7932,35.816754225990685
+post-hoc: occupation recorded (state-module subsample),occupation_subsample_adjusted,stunted,poultry,cattle+goat_sheep+poultry+pig,0.9590707070541219,-2.5080433203699366,4.426184734478181,0.5876638388232813,28303,7932,35.816754225990685
+post-hoc: occupation recorded (state-module subsample),occupation_subsample_adjusted,stunted,pig,cattle+goat_sheep+poultry+pig,3.5940296366513103,-5.090856463109619,12.278915736412237,0.4172709225107273,28303,7932,35.816754225990685

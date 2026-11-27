@@ -18,6 +18,6 @@ __pycache__/
 .pytest_cache/
 .venv/
 
-# Results stay local until the submission release (v1.0.0).
-outputs/*.csv
+# Run logs and scratch copies are not published; aggregate result tables are.
 outputs/*.log
+outputs/_before_review/

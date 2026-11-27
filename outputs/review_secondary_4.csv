@@ -1,0 +1,9 @@
+kind,analysis,outcome,exposure,model,pp,lo,hi,p,n,clusters,prevalence
+pre-specified secondary outcome,nfhs4,abx_nonbloody_diarrhoea,any_livestock,any_livestock,0.3450515908381957,-2.290129804334321,2.980232986010712,0.7974402569133603,18046,10577,19.28352733590105
+pre-specified secondary outcome,nfhs4,abx_nonbloody_diarrhoea,cattle,cattle+goat_sheep+poultry,0.22870731737664818,-2.4066224179815037,2.8640370527348,0.8649228634405608,18046,10577,19.28352733590105
+pre-specified secondary outcome,nfhs4,abx_nonbloody_diarrhoea,goat_sheep,cattle+goat_sheep+poultry,0.6653665097792508,-2.250846641730016,3.581579661288518,0.6547118114265196,18046,10577,19.28352733590105
+pre-specified secondary outcome,nfhs4,abx_nonbloody_diarrhoea,poultry,cattle+goat_sheep+poultry,-0.15604305884864597,-4.507613414928614,4.195527297231322,0.9439638230260899,18046,10577,19.28352733590105
+pre-specified secondary outcome,nfhs4,abx_fever_cough,any_livestock,any_livestock,-0.8727503284954998,-2.4895374252850244,0.744036768294025,0.29003590667186363,38232,16439,19.6404137331676
+pre-specified secondary outcome,nfhs4,abx_fever_cough,cattle,cattle+goat_sheep+poultry,-0.6271693303709001,-2.2516375217204123,0.997298860978612,0.449209203179301,38232,16439,19.6404137331676
+pre-specified secondary outcome,nfhs4,abx_fever_cough,goat_sheep,cattle+goat_sheep+poultry,0.8772145678210715,-0.8341148684829575,2.5885440041251004,0.3150384198251244,38232,16439,19.6404137331676
+pre-specified secondary outcome,nfhs4,abx_fever_cough,poultry,cattle+goat_sheep+poultry,0.04026802232038258,-2.49544478261046,2.5759808272512252,0.9751684612701584,38232,16439,19.6404137331676
