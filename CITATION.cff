@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: "If you use this code, its outputs or its analysis plan, please cite it as below."
+title: "Household animals, child diarrhoea, antibiotic use and growth in India"
+type: software
+version: "0.0.0"
+authors:
+  - family-names: "Siddalingaiah"
+    given-names: "H S"
+    orcid: "https://orcid.org/0000-0002-4771-8285"
+    affiliation: "Shridevi Institute of Medical Sciences and Research Hospital, Tumkur, Karnataka, India"
+  - family-names: "Masali"
+    given-names: "Preethi Ashok"
+    orcid: "https://orcid.org/0009-0009-8996-0027"
+    affiliation: "Shridevi Institute of Medical Sciences and Research Hospital, Tumkur, Karnataka, India"
+license: MIT
+repository-code: "https://github.com/hssling/india-household-animals-child-health"
+keywords:
+  - "One Health"
+  - "livestock"
+  - "poultry"
+  - "child growth"
+  - "diarrhoea"
+  - "antibiotic use"
+  - "NFHS"
+  - "India"

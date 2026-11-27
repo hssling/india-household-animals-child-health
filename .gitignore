@@ -1,0 +1,19 @@
+# Survey microdata and unit-level extracts are never committed (DHS terms of use).
+data_raw/
+data_local/
+*.dta
+*.DTA
+*.sav
+*.sas7bdat
+*.zip
+*.parquet
+
+# Manuscript and submission files live in the authors' private repository, not here.
+manuscript/
+submission/
+*.docx
+*.pdf
+
+__pycache__/
+.pytest_cache/
+.venv/
